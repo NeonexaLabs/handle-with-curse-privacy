@@ -62,7 +62,7 @@ footer{margin-top:48px;padding-top:20px;border-top:2px solid var(--border);text-
 <dt>Contact</dt><dd><a href="mailto:neonexalabs@gmail.com">neonexalabs@gmail.com</a></dd>
 <dt>Effective</dt><dd>13 October 2026</dd>
 </dl>
-<nav aria-label="Sections"><a href="#what-stays-on-your-phone">What stays on your phone</a><a href="#usage-statistics">Usage statistics</a><a href="#ads">Ads</a><a href="#purchases">Purchases</a><a href="#children">Children</a><a href="#where-information-goes-and-how-it-is-protected">Where information goes and how it is protected</a><a href="#keeping-and-deleting-information">Keeping and deleting information</a><a href="#your-rights">Your rights</a><a href="#changes-to-this-policy">Changes to this policy</a><a href="#contact">Contact</a></nav>
+<nav aria-label="Sections"><a href="#what-stays-on-your-phone">What stays on your phone</a><a href="#usage-statistics">Usage statistics</a><a href="#game-settings-from-the-web">Game settings from the web</a><a href="#ads">Ads</a><a href="#purchases">Purchases</a><a href="#children">Children</a><a href="#where-information-goes-and-how-it-is-protected">Where information goes and how it is protected</a><a href="#keeping-and-deleting-information">Keeping and deleting information</a><a href="#your-rights">Your rights</a><a href="#changes-to-this-policy">Changes to this policy</a><a href="#contact">Contact</a></nav>
 <section class="callout"><h2 id="in-short">In short</h2>
 <ul>
 <li>The game is for players aged 13 and over.</li>
@@ -72,6 +72,8 @@ footer{margin-top:48px;padding-top:20px;border-top:2px solid var(--border);text-
   answer in Settings.</li>
 <li>The game counts simple things, like days played and ads watched, to find out what to fix. They go to Google's Firebase Analytics, hold
   no name or contact detail, and you can switch them off in Settings.</li>
+<li>When it starts, the game downloads one small public file of game settings (for example how long a shop day lasts) from the web. The
+  request carries nothing about you beyond what every web request carries, such as your IP address.</li>
 <li>"Remove ads" is a one-time purchase handled by Google Play. We never see your payment details.</li>
 <li>The game does not ask for your name, email address, contacts, photos, camera, microphone or location.</li>
 </ul></section>
@@ -95,6 +97,11 @@ footer{margin-top:48px;padding-top:20px;border-top:2px solid var(--border);text-
 <td>Settings</td>
 <td>music and sound volume, mute, vibration, the "Usage statistics" switch</td>
 <td>uninstall the game</td>
+</tr>
+<tr>
+<td>Game settings</td>
+<td>the last game-settings file the game downloaded (numbers and a minimum version; nothing about you)</td>
+<td>clear the app's storage, or uninstall the game</td>
 </tr>
 <tr>
 <td>Your ad consent choice</td>
@@ -132,6 +139,15 @@ them up or delete one person's counts afterwards; switching them off and uninsta
 their own after the period above.</p>
 <p>Google acts for us in this: it stores and processes the counts for us under its terms for
 <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase</a> and <a href="https://support.google.com/analytics/answer/6004245" rel="noopener noreferrer">Google Analytics</a>.</p>
+<h2 id="game-settings-from-the-web">Game settings from the web</h2>
+<p>When the game starts, and again when you come back to it after half an hour or more, it downloads one small public file of game settings,
+for example how long a shop day lasts or the oldest version that may still be played. It lets us fix the balance of the game without
+asking you to update. The file is the same for everybody and is hosted by GitHub (GitHub Pages) at an address on <code>neonexalabs.github.io</code>.</p>
+<p>The request has no cookie, account, identifier of yours or information from the game in it. Like any web request, it reaches GitHub
+with your phone's IP address and basic details of the request, such as the kind of app asking. GitHub handles those under
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">its own privacy statement</a>; we receive no
+log of it and keep nothing. There is no switch for it in Settings because it is not information about you. Without a connection, the
+game keeps playing with the settings it already has.</p>
 <h2 id="ads">Ads</h2>
 <p>The game shows ads from Google AdMob: ads you choose to watch in return for a reward, and full-screen ads between shop days.
 Buying Remove ads switches off the full-screen ones; the ads you choose to watch stay.</p>
@@ -170,12 +186,14 @@ this. We do not knowingly collect personal information from children, and the ga
 and think a child has sent us personal information, write to us at the address above and we will answer and, where we can, act on it.</p>
 <h2 id="where-information-goes-and-how-it-is-protected">Where information goes and how it is protected</h2>
 <p>Information collected by Google's software (advertising and Firebase Analytics) goes to Google, which may process it in any country where
-it operates. It is sent encrypted (TLS). The game's own files stay in the game's private storage on your phone, which other apps cannot
+it operates. The request for the game-settings file goes to GitHub, which may do the same under its own policy. Both are sent
+encrypted (TLS). The game's own files stay in the game's private storage on your phone, which other apps cannot
 read on a normal, unmodified phone. No way of storing or sending information is completely secure, so we cannot promise absolute security.</p>
 <h2 id="keeping-and-deleting-information">Keeping and deleting information</h2>
 <ul>
 <li><strong>On your phone:</strong> until you use Reset save (progress only), clear the app's storage or uninstall the game.</li>
 <li><strong>Usage statistics:</strong> for no longer than 2 months (see above). Switch them off in Settings to stop new ones.</li>
+<li><strong>Game-settings requests:</strong> GitHub holds its ordinary server records under its own policy; we receive none and keep none.</li>
 <li><strong>Advertising information:</strong> Google holds it under its own policies and retention periods. We keep no copy, so we cannot delete it
   for you. You can delete or reset your advertising ID in Android's settings and manage your Google account's ad data with the links
   above.</li>

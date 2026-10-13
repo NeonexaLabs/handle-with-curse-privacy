@@ -4,5 +4,6 @@ The public privacy policy of the mobile game **Handle With Curse** by NeonexaLab
 
 Read it at https://neonexalabs.github.io/handle-with-curse-privacy/
 
-This repository only holds the policy page (`index.html` and its pictures). It is built from the game's policy text and published with
-GitHub Pages. Questions about the policy: neonexalabs@gmail.com
+This repository holds the policy page (`index.html` and its pictures), built from the game's policy text, and `remote-config.json`, the
+small settings file the game downloads when it starts (https://neonexalabs.github.io/handle-with-curse-privacy/remote-config.json; keep it
+where it is, because installed copies of the game ask for exactly this address). Both are published with GitHub Pages. Questions about the policy: neonexalabs@gmail.com

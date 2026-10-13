@@ -1,0 +1,4 @@
+{
+	"_comment": "Game settings that Handle With Curse downloads when it starts. A key that is not listed keeps the value built into the game, and a value outside its safe range is ignored. Numbers go without quotes. Do not raise min_supported_version above a version that is already live in the store. Every key and its range: docs/REMOTE_CONFIG.md in the game's repository.",
+	"min_supported_version": "1.0.0"
+}
